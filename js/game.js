@@ -1,10 +1,9 @@
-
 /* Game namespace */
 var game = {
     // Run on page load.
     "onload" : function () {
         // Initialize the video.
-        if (!me.video.init("screen", 480, 320, true, 'auto')) {
+        if (!me.video.init("screen", $(document).width(), $(document).height(), true, 'auto')) {
             alert("Your browser does not support HTML5 canvas.");
             return;
         }
